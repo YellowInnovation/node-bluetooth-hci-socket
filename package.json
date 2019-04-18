@@ -40,5 +40,12 @@
       "preinstall": "npm install node-pre-gyp",
       "install": "node-pre-gyp install --fallback-to-build",
       "test": "jshint lib/*.js"
+  },
+  "binary": {
+      "module_name": "binding",
+      "module_path": "./lib/binding/",
+      "host": "https://github.com/yellowinnovation/node-bluetooth-hci-socket/releases/download/",
+      "package_name": "{module_name}-{version}-{node_abi}-{platform}-{arch}.tar.gz",
+      "remote_path": "{version}"
   }
 }
